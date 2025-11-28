@@ -60,6 +60,11 @@ console.log(cubeMap([1, 3, 6]));
 
 // 6.- A partir d’una array de strings, es creï una nova amb aquelles que tinguin més d’una lletra ‘a’
 
+let paraules = ["casa", "porta", "aigua", "banana", "sol"];
+let filtrades = paraules.filter(p => p.split('a').length - 1 > 1);
+
+console.log("Paraules amb més d'una 'a':", filtrades);
+
 
 // 7.- Crea una estructura Map i insereix 3 claus – valor. Les 3 claus han de ser de tipus de dades
 // diferents. Et deixa?
