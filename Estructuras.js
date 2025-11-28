@@ -82,6 +82,23 @@ console.log("Mapa:", mapa);
 // 8.- Donada una paraula, insereix cada caràcter dins d’una cua. Extreu ara de la cua els caràcters un a
 // un per poder decidir si és un palíndrom o no.
 
+function esPalindrom(paraula) {
+    let cua = [];
+
+
+    for (let c of paraula) cua.push(c);
+
+
+    let reconstruida = "";
+    while (cua.length > 0) {
+        reconstruida += cua.shift();
+    }
+
+    return reconstruida === reconstruida.split("").reverse().join("");
+}
+
+console.log(esPalindrom("anna"));
+console.log(esPalindrom("casa"));
 
 
 
