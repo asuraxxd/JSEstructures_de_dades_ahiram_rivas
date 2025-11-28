@@ -40,6 +40,9 @@ console.log("Fusionat sense duplicats:", senseDuplicats);
 
 // 4.- Modifica l’exercici anterior per utilitzar una estructura que no permeti duplicats.
 
+let conjunt = new Set([...a1, ...a2]);
+console.log("Amb Set:", Array.from(conjunt));
+
 
 // 5.- Codifica la funció map d’una Array perquè en creï una nova amb el valor cúbic de cada número.
 
