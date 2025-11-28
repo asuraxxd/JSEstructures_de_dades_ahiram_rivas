@@ -46,6 +46,17 @@ console.log("Amb Set:", Array.from(conjunt));
 
 // 5.- Codifica la funció map d’una Array perquè en creï una nova amb el valor cúbic de cada número.
 
+function cubeMap(arr) {
+    let resultat = [];
+    for (let num of arr) {
+        resultat.push(num ** 3);
+    }
+    return resultat;
+}
+
+console.log(cubeMap([1, 3, 6]));
+
+
 
 // 6.- A partir d’una array de strings, es creï una nova amb aquelles que tinguin més d’una lletra ‘a’
 
