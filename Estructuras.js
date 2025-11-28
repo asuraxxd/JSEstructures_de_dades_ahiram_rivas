@@ -17,6 +17,8 @@ console.log("Últim:", nums[nums.length - 1]);
 
 // 2.- Utilitza l’operador de propagació per crear un altre array usant els valors de l’exercici anterior
 
+let nums2 = [...nums];
+console.log("Nou array:", nums2);
 
 
 // 3.- Fusiona dos arrays i esborren els valors duplicats (no utilitzis el Set).
