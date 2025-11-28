@@ -69,6 +69,15 @@ console.log("Paraules amb més d'una 'a':", filtrades);
 // 7.- Crea una estructura Map i insereix 3 claus – valor. Les 3 claus han de ser de tipus de dades
 // diferents. Et deixa?
 
+let mapa = new Map();
+
+mapa.set("clauString", "Valor 1");
+mapa.set(123, "Valor 2");
+mapa.set({ nom: "obj" }, "Valor 3");
+
+console.log("Mapa:", mapa);
+
+
 
 // 8.- Donada una paraula, insereix cada caràcter dins d’una cua. Extreu ara de la cua els caràcters un a
 // un per poder decidir si és un palíndrom o no.
