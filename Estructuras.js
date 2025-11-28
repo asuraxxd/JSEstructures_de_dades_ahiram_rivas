@@ -104,3 +104,19 @@ console.log(esPalindrom("casa"));
 
 // 9.- Crea una Cua d’Objectes amb dades de 3 pel·lícules. Itera la cua per mostrar per pantalla la
 // pel·lícula més antiga.
+
+let pelicules = [];
+
+pelicules.push({ titol: "Peli A", any: 1990 });
+pelicules.push({ titol: "Peli B", any: 2005 });
+pelicules.push({ titol: "Peli C", any: 1980 });
+
+let mesAntiga = pelicules[0];
+
+for (let peli of pelicules) {
+    if (peli.any < mesAntiga.any) {
+        mesAntiga = peli;
+    }
+}
+
+console.log("La pel·lícula més antiga és:", mesAntiga);
