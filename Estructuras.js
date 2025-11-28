@@ -23,6 +23,20 @@ console.log("Nou array:", nums2);
 
 // 3.- Fusiona dos arrays i esborren els valors duplicats (no utilitzis el Set).
 
+let a1 = [1, 2, 3, 4, 5];
+let a2 = [3, 4, 5, 6, 7];
+
+let fusio = a1.concat(a2);
+
+let senseDuplicats = [];
+for (let valor of fusio) {
+    if (!senseDuplicats.includes(valor)) {
+        senseDuplicats.push(valor);
+    }
+}
+
+console.log("Fusionat sense duplicats:", senseDuplicats);
+
 
 // 4.- Modifica l’exercici anterior per utilitzar una estructura que no permeti duplicats.
 
